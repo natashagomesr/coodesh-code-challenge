@@ -12,7 +12,7 @@ export type NewEmailData = {
   };
 };
 
-export type Email = {
+export type TypeEmail = {
   toAddr: string;
   text: string;
   rawSize: number;

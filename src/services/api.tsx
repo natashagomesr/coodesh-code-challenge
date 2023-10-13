@@ -58,5 +58,7 @@ export const generateNewEmail = async () => {
     }
   `;
 
-  return executeGraphQLQuery(query, {});
+  return executeGraphQLQuery(query, {
+    id: undefined,
+  });
 };

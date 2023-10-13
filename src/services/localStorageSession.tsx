@@ -1,8 +1,12 @@
+"use client";
+
 import { NewEmailData, SessionData } from "@/types/index";
 
 const EMAIL_KEY = "email";
 const SESSION_ID_KEY = "session-id";
 const EXPIRE_AT_KEY = "email-expire-at";
+
+const isServerSide = Boolean(typeof window);
 
 const shouldCreateEmail = (): boolean => {
   const session = getSessionFromLocalStorage();
@@ -15,6 +19,14 @@ const shouldCreateEmail = (): boolean => {
 };
 
 const getSessionFromLocalStorage = (): SessionData => {
+  if (isServerSide) {
+    return {
+      emailAddress: "",
+      expireAt: "",
+      sessionId: "",
+    };
+  }
+
   return {
     emailAddress: localStorage.getItem(EMAIL_KEY) ?? "",
     expireAt: localStorage.getItem(EXPIRE_AT_KEY) ?? "",

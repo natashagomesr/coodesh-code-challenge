@@ -11,7 +11,6 @@ type InboxProps = {
 };
 
 function Inbox({ emails }: InboxProps) {
-  console.log(emails);
   const [selectedEmail, setSelectedEmail] = useState<TypeEmail | null>(null);
 
   const handleEmailSelect = (email: TypeEmail) => {
