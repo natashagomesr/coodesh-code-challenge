@@ -1,14 +1,20 @@
 import { useSession } from "@/contexts/SessionContext";
 
-import { Email } from "@/types/index";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+
+import { TypeEmail } from "@/types/index";
+
 import EmailList from "./EmailList";
 
-function Inbox({ emails }) {
-  console.log(emails);
-  const [selectedEmail, setSelectedEmail] = useState<Email | null>(null);
+type InboxProps = {
+  emails: TypeEmail[];
+};
 
-  const handleEmailSelect = (email: Email) => {
+function Inbox({ emails }: InboxProps) {
+  console.log(emails);
+  const [selectedEmail, setSelectedEmail] = useState<TypeEmail | null>(null);
+
+  const handleEmailSelect = (email: TypeEmail) => {
     setSelectedEmail(email);
   };
 

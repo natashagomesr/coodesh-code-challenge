@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-const Refresher = ({ fetchEmails }) => {
+type RefresherProps = {
+  fetchEmails: () => void;
+};
+
+const Refresher = ({ fetchEmails }: RefresherProps) => {
   const [progress, setProgress] = useState(0);
   const [secondsRemaining, setSecondsRemaining] = useState(15);
 

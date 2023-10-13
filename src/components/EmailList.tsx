@@ -1,17 +1,17 @@
-import { Email } from "@/types/index";
+import { TypeEmail } from "@/types/index";
 import React, { useState } from "react";
 import Refresher from "./Refresher";
 
 interface EmailListProps {
-  emails: Email[];
-  onEmailSelect: (email: Email) => void;
+  emails: TypeEmail[];
+  onEmailSelect: (email: TypeEmail) => void;
 }
 
 function EmailList({ emails, onEmailSelect }: EmailListProps) {
   const [selectedEmailId, setSelectedEmailId] = useState<string | null>(null);
   const [readEmails, setReadEmails] = useState<string[]>([]);
 
-  const handleEmailClick = (email: Email) => {
+  const handleEmailClick = (email: TypeEmail) => {
     setSelectedEmailId(email.downloadUrl);
 
     if (!readEmails.includes(email.downloadUrl)) {
