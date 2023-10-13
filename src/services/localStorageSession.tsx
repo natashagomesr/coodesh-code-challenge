@@ -6,7 +6,7 @@ const EMAIL_KEY = "email";
 const SESSION_ID_KEY = "session-id";
 const EXPIRE_AT_KEY = "email-expire-at";
 
-const isServerSide = Boolean(typeof window);
+const isServerSide = Boolean(typeof window === "undefined");
 
 const shouldCreateEmail = (): boolean => {
   const session = getSessionFromLocalStorage();
