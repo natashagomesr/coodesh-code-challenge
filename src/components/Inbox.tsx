@@ -34,7 +34,7 @@ function Inbox({ emails }: InboxProps) {
           </div>
         ) : (
           <div className=" font-extralight text-lg text-center">
-            Selecione um e-mail para exibir
+            Select an email to view
           </div>
         )}
       </div>
