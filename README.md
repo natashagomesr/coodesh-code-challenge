@@ -13,6 +13,7 @@
 ## 🔗 Link Documentação
 
 O link da documentação está em [DropMail](https://dropmail.me/api/#)
+O link da documentação do CorsAnywhere está em [CorsAnywhere](https://github.com/Rob--W/cors-anywhere)
 
 ## ✨ Funcionalidades
 
@@ -45,12 +46,13 @@ Para a construção do projeto, as seguintes tecnologias foram utilizadas:
 
 Siga os passos e inclua as informações abaixo:
 
-| Passo                   | Comando/informação |
-| ----------------------- | ------------------ |
-| Faça o fork             | `botão de forkar`  |
-| Faça o clone            | `git clone`        |
-| Instale as dependências | `npm i`            |
-| Rode o projeto          | `npm run dev`      |
+| Passo                          | Comando/informação                                   |
+| ------------------------------ | ---------------------------------------------------- |
+| Faça o fork                    | `botão de forkar`                                    |
+| Faça o clone                   | `git clone`                                          |
+| Instale as dependências        | `npm i`                                              |
+| Peça permissão ao CorsAnywhere | [CorsAnywhere](https://cors-anywhere.herokuapp.com/) |
+| Rode o projeto                 | `npm run dev`                                        |
 
 ## 🔃 Rotas:
 
@@ -68,6 +70,10 @@ Siga os passos e inclua as informações abaixo:
   </tr>
   
 </table>
+
+## Link do projeto no Vercel
+
+[Vercel](https://coodesh-code-challenge-git-main-natashas-projects.vercel.app/)
 
 <h2>
   <a href='#top'>🔝 Voltar para o topo.</a>

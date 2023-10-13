@@ -1,7 +1,7 @@
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 const token = process.env.NEXT_PUBLIC_API_ACCESS_TOKEN;
-const proxyCors = process.env.NEXT_PUBLIC_CORS_PROXY || "";
+const proxyCors = process.env.NEXT_PUBLIC_CORS_PROXY;
 
 const endpoint = `${proxyCors}${process.env.NEXT_PUBLIC_API_URL}${token}`;
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useContext, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Header from "@/components/Header";
 import Email from "@/components/MailGenerator";
