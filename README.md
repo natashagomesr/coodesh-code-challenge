@@ -71,9 +71,13 @@ Siga os passos e inclua as informações abaixo:
   
 </table>
 
-## Link do projeto no Vercel
+## ✅ Link do projeto no Vercel
 
 [Vercel](https://coodesh-code-challenge-git-main-natashas-projects.vercel.app/)
+
+## ✅ Link diagrama de estruturação do projeto
+
+[Diagrama](https://drive.google.com/file/d/1dxqs-M0-V3TuabK0e4vr2nmkFRZqrd24/view?usp=sharing)
 
 <h2>
   <a href='#top'>🔝 Voltar para o topo.</a>
